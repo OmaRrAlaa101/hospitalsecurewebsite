@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+
+{% block title %}Doctor Dashboard{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h2>Doctor Dashboard</h2>
+        <hr>
+
+        <!-- Add this section for the profile button -->
+        <div class="mb-3">
+            <a href="{{ url_for('doctor_profile') }}" class="btn btn-secondary">Edit Profile</a>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5>Patients</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Username</th>
+                                        <th>Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for patient in patients %}
+                                    <tr>
+                                        <td>{{ patient.id }}</td>
+                                        <td>{{ patient.username }}</td>
+                                        <td>{{ patient.email }}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5>Add Patient Record</h5>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" action="{{ url_for('add_record') }}">
+                            <div class="mb-3">
+                                <label for="patient_id" class="form-label">Patient</label>
+                                <select class="form-select" id="patient_id" name="patient_id" required>
+                                    {% for patient in patients %}
+                                    <option value="{{ patient.id }}">{{ patient.username }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="diagnosis" class="form-label">Diagnosis</label>
+                                <textarea class="form-control" id="diagnosis" name="diagnosis" rows="3" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="prescription" class="form-label">Prescription</label>
+                                <textarea class="form-control" id="prescription" name="prescription" rows="2"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="notes" class="form-label">Notes</label>
+                                <textarea class="form-control" id="notes" name="notes" rows="2"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add Record</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h5>Upcoming Appointments</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Patient</th>
+                                <th>Appointment Time</th>
+                                <th>Reason</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for appointment in appointments %}
+                            <tr>
+                                <td>{{ User.query.get(appointment.patient_id).username }}</td>
+                                <td>{{ appointment.appointment_time.strftime('%Y-%m-%d %H:%M') }}</td>
+                                <td>{{ appointment.reason }}</td>
+                                <td>{{ appointment.status }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header">
+                <h5>Patient Records</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Record ID</th>
+                                <th>Patient</th>
+                                <th>Diagnosis</th>
+                                <th>Prescription</th>
+                                <th>Notes</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for record in records %}
+                            <tr>
+                                <td>{{ record.id }}</td>
+                                <td>{{ User.query.get(record.patient_id).username }}</td>
+                                <td>{{ record.diagnosis }}</td>
+                                <td>{{ record.prescription }}</td>
+                                <td>{{ record.notes }}</td>
+                                <td>
+                                    <a href="{{ url_for('edit_record', record_id=record.id) }}" class="btn btn-sm btn-primary">Edit</a>
+                                    <form method="POST" action="{{ url_for('delete_record', record_id=record.id) }}" style="display:inline;">
+                                        <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Delete this record?')">Delete</button>
+                                    </form>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

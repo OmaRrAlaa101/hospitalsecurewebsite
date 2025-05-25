@@ -1,0 +1,82 @@
+2025-05-24 00:53:42 | User: 4 | Action: LOGIN_SUCCESS | IP: 127.0.0.1 | Details: 
+2025-05-24 00:56:20 | User: 4 | Action: LOGIN_SUCCESS | IP: 127.0.0.1 | Details: 
+2025-05-24 00:57:24 | User: 4 | Action: BOOK_APPOINTMENT | IP: 127.0.0.1 | Details: With doctor ID: 2
+2025-05-24 00:58:40 | User: 4 | Action: LOGIN_SUCCESS | IP: 127.0.0.1 | Details: 
+2025-05-24 00:58:52 | User: 4 | Action: BOOK_APPOINTMENT | IP: 127.0.0.1 | Details: With doctor ID: 2
+2025-05-24 00:59:06 | User: 4 | Action: LOGOUT | IP: 127.0.0.1 | Details: 
+2025-05-24 01:18:51 | User: None | Action: LOGIN_FAILED | IP: 127.0.0.1 | Details: Failed login for admin@securehealth.com
+2025-05-24 01:26:04 | User: 1 | Action: 2FA_SUCCESS | IP: 127.0.0.1 | Details: 
+2025-05-24 01:28:23 | User: 1 | Action: 2FA_SUCCESS | IP: 127.0.0.1 | Details: 
+2025-05-24 01:28:54 | User: 4 | Action: LOGIN_SUCCESS | IP: 127.0.0.1 | Details: 
+2025-05-24 01:29:05 | User: 1 | Action: DEACTIVATED_USER | IP: 127.0.0.1 | Details: User ID: 4
+2025-05-24 01:29:33 | User: 1 | Action: ACTIVATED_USER | IP: 127.0.0.1 | Details: User ID: 4
+2025-05-24 01:29:35 | User: 1 | Action: DEACTIVATED_USER | IP: 127.0.0.1 | Details: User ID: 1
+2025-05-24 01:29:44 | User: 1 | Action: ACTIVATED_USER | IP: 127.0.0.1 | Details: User ID: 1
+2025-05-24 01:37:32 | User: None | Action: LOGIN_FAILED | IP: 127.0.0.1 | Details: Failed login for admin
+2025-05-24 01:38:44 | User: 1 | Action: 2FA_SUCCESS | IP: 127.0.0.1 | Details: 
+2025-05-24 01:38:55 | User: 1 | Action: DEACTIVATED_USER | IP: 127.0.0.1 | Details: User ID: 4
+2025-05-24 01:39:18 | User: 4 | Action: LOGOUT | IP: 127.0.0.1 | Details: 
+2025-05-24 01:39:32 | User: 4 | Action: LOGIN_SUCCESS | IP: 127.0.0.1 | Details: 
+2025-05-24 01:39:36 | User: 1 | Action: ACTIVATED_USER | IP: 127.0.0.1 | Details: User ID: 4
+2025-05-24 01:39:41 | User: 1 | Action: DEACTIVATED_USER | IP: 127.0.0.1 | Details: User ID: 4
+2025-05-24 01:41:48 | User: 1 | Action: ACTIVATED_USER | IP: 127.0.0.1 | Details: User ID: 4
+2025-05-24 01:42:14 | User: 1 | Action: DEACTIVATED_USER | IP: 127.0.0.1 | Details: User ID: 4
+2025-05-24 01:42:21 | User: 4 | Action: LOGOUT | IP: 127.0.0.1 | Details: 
+2025-05-24 01:42:24 | User: 1 | Action: LOGOUT | IP: 127.0.0.1 | Details: 
+2025-05-24 01:42:42 | User: 1 | Action: 2FA_SUCCESS | IP: 127.0.0.1 | Details: 
+2025-05-24 01:42:51 | User: 4 | Action: LOGIN_SUCCESS | IP: 127.0.0.1 | Details: 
+2025-05-24 01:42:57 | User: 4 | Action: LOGOUT | IP: 127.0.0.1 | Details: 
+2025-05-24 01:47:41 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to active
+2025-05-24 01:47:50 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to inactive
+2025-05-24 02:02:15 | User: 1 | Action: LOGOUT | IP: 127.0.0.1 | Details: 
+2025-05-24 02:11:27 | User: None | Action: LOGIN_FAILED | IP: 127.0.0.1 | Details: Failed login for admin
+2025-05-24 02:12:17 | User: None | Action: LOGIN_FAILED | IP: 127.0.0.1 | Details: Failed login for admin
+2025-05-24 02:13:27 | User: 1 | Action: 2FA_SUCCESS | IP: 127.0.0.1 | Details: 
+2025-05-24 02:13:31 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to active
+2025-05-24 02:13:38 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to inactive
+2025-05-24 02:14:03 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to active
+2025-05-24 02:14:18 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to inactive
+2025-05-24 02:24:22 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to active
+2025-05-24 02:24:25 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to inactive
+2025-05-24 02:24:41 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to active
+2025-05-24 02:25:02 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to inactive
+2025-05-24 02:25:08 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to active
+2025-05-24 02:25:12 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to inactive
+2025-05-24 02:25:15 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to active
+2025-05-24 02:25:16 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to inactive
+2025-05-24 02:25:21 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to active
+2025-05-24 02:25:23 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to inactive
+2025-05-24 02:25:23 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to active
+2025-05-24 02:25:24 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to inactive
+2025-05-24 02:25:28 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to active
+2025-05-24 02:25:32 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to inactive
+2025-05-24 02:26:40 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to active
+2025-05-24 02:26:44 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to inactive
+2025-05-24 02:26:56 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to active
+2025-05-24 02:27:00 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to inactive
+2025-05-24 02:27:01 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user Ahmed to active
+2025-05-24 02:27:37 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user mariam to inactive
+2025-05-24 02:27:39 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user mariam to active
+2025-05-24 02:28:53 | User: 1 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user admin to inactive
+2025-05-24 02:30:24 | User: 5 | Action: 2FA_SUCCESS | IP: 127.0.0.1 | Details: 
+2025-05-24 02:30:27 | User: 5 | Action: TOGGLE_USER | IP: 127.0.0.1 | Details: Toggled user admin to active
+2025-05-24 02:32:10 | User: 4 | Action: 2FA_SUCCESS | IP: 127.0.0.1 | Details: 
+2025-05-24 02:32:42 | User: 4 | Action: ADD_RECORD | IP: 127.0.0.1 | Details: For patient ID: 9
+2025-05-24 02:33:38 | User: 9 | Action: LOGIN_SUCCESS | IP: 127.0.0.1 | Details: 
+2025-05-24 02:34:03 | User: 9 | Action: BOOK_APPOINTMENT | IP: 127.0.0.1 | Details: With doctor ID: 4
+2025-05-24 02:42:25 | User: 5 | Action: 2FA_SUCCESS | IP: 127.0.0.1 | Details: 
+2025-05-24 02:42:45 | User: 4 | Action: 2FA_SUCCESS | IP: 127.0.0.1 | Details: 
+2025-05-24 02:59:26 | User: 4 | Action: DELETE_RECORD | IP: 127.0.0.1 | Details: Record ID: 2
+2025-05-24 02:59:42 | User: 4 | Action: ADD_RECORD | IP: 127.0.0.1 | Details: For patient ID: 8
+2025-05-24 03:01:09 | User: 9 | Action: CANCEL_APPOINTMENT | IP: 127.0.0.1 | Details: Appointment ID: 4
+2025-05-24 03:02:50 | User: 9 | Action: BOOK_APPOINTMENT | IP: 127.0.0.1 | Details: With doctor ID: 4
+2025-05-24 03:13:20 | User: 9 | Action: LOGOUT | IP: 127.0.0.1 | Details: 
+2025-05-24 06:11:11 | User: 4 | Action: 2FA_SUCCESS | IP: 127.0.0.1 | Details: 
+2025-05-24 06:13:32 | User: 4 | Action: LOGOUT | IP: 127.0.0.1 | Details: 
+2025-05-24 06:21:38 | User: 4 | Action: 2FA_SUCCESS | IP: 127.0.0.1 | Details: 
+2025-05-24 06:22:38 | User: 4 | Action: LOGOUT | IP: 127.0.0.1 | Details: 
+2025-05-24 06:22:45 | User: None | Action: LOGIN_FAILED | IP: 127.0.0.1 | Details: Failed login for admin
+2025-05-24 06:34:07 | User: 8 | Action: LOGIN_SUCCESS | IP: 127.0.0.1 | Details: 
+2025-05-24 06:34:39 | User: 5 | Action: 2FA_SUCCESS | IP: 127.0.0.1 | Details: 
+2025-05-24 06:35:52 | User: 4 | Action: 2FA_FAILED | IP: 127.0.0.1 | Details: 
+2025-05-24 06:36:02 | User: 4 | Action: 2FA_SUCCESS | IP: 127.0.0.1 | Details: 

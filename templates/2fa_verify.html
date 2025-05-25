@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}2FA Verification{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h4>Two-Factor Authentication</h4>
+            </div>
+            <div class="card-body">
+                <p>Please enter the 6-digit code from your authenticator app:</p>
+                <form method="POST" action="{{ url_for('verify_2fa') }}">
+                    <div class="mb-3">
+                        <input type="text" class="form-control text-center" name="token" placeholder="OTP" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Verify</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

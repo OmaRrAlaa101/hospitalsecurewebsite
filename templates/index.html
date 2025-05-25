@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <h1 class="display-4">Secure Health</h1>
+    <p class="lead">A security-focused medical appointment system</p>
+    <hr class="my-4">
+    <p>Secure your health records with advanced security measures</p>
+    <div class="mt-4">
+        <a class="btn btn-primary btn-lg" href="{{ url_for('login') }}" role="button">Login</a>
+        <a class="btn btn-secondary btn-lg" href="{{ url_for('register') }}" role="button">Register</a>
+    </div>
+</div>
+{% endblock %}

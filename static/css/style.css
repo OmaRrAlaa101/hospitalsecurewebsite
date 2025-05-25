@@ -1,0 +1,88 @@
+/* Global Styles */
+body {
+     background: url("https://hmcarchitects.com/wp-content/uploads/1296007000_N118_hmchigh-1.jpg") no-repeat center center fixed;
+    background-attachment: fixed;
+    color: #7a90a7;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Layout Enhancements */
+.jumbotron {
+    background-color: #ffffffdd;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: 2rem;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #26c6da, #66bb6a);
+    border-radius: 0 0 1.5rem 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    padding: 1rem 2rem;
+}
+
+/* Cards */
+.card {
+    background: #ffffff;
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background-color: #26c6da;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+    padding: 1rem 1.5rem;
+}
+
+/* Tables */
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Forms */
+.form-control,
+.form-select {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(90deg, #26c6da, #66bb6a);
+    border: none;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #66bb6a, #26c6da);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    .card {
+        margin: 1rem;
+    }
+}

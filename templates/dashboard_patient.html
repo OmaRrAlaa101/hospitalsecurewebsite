@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% block title %}Patient Dashboard{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h2>Patient Dashboard</h2>
+        <hr>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5>My Medical Records</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Doctor</th>
+                                        <th>Diagnosis</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for record in records %}
+                                    <tr>
+                                        <td>{{ User.query.get(record.doctor_id).username }}</td>
+                                        <td>{{ record.diagnosis[:50] }}...</td>
+                                        <td>{{ record.created_at.strftime('%Y-%m-%d') }}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5>Book Appointment</h5>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" action="{{ url_for('book_appointment') }}">
+                            <div class="mb-3">
+                                <label for="doctor_id" class="form-label">Doctor</label>
+                                <select class="form-select" id="doctor_id" name="doctor_id" required>
+                                    {% for doctor in doctors %}
+                                    <option value="{{ doctor.id }}">{{ doctor.username }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="appointment_time" class="form-label">Date & Time</label>
+                                <input type="datetime-local" class="form-control" id="appointment_time" name="appointment_time" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="reason" class="form-label">Reason</label>
+                                <textarea class="form-control" id="reason" name="reason" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Book Appointment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h5>My Appointments</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Doctor</th>
+                                <th>Appointment Time</th>
+                                <th>Reason</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for appointment in appointments %}
+                            <tr>
+                                <td>{{ User.query.get(appointment.doctor_id).username }}</td>
+                                <td>{{ appointment.appointment_time.strftime('%Y-%m-%d %H:%M') }}</td>
+                                <td>{{ appointment.reason }}</td>
+                                <td>{{ appointment.status }}</td>
+                                <td>
+                                    {% if appointment.status != 'cancelled' %}
+                                    <form method="POST" action="{{ url_for('cancel_appointment', appointment_id=appointment.id) }}" style="display:inline;">
+                                        <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Cancel this appointment?')">Cancel</button>
+                                    </form>
+                                    {% else %}
+                                    <span class="text-muted">Cancelled</span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <a href="{{ url_for('edit_profile') }}" class="btn btn-secondary">Edit Profile</a>
+    </div>
+</div>
+{% endblock %}
