@@ -3,6 +3,8 @@
 ## Overview
 This is a secure hospital management system designed with robust security features including two-factor authentication (2FA), encrypted data storage, and secure communication protocols. The system serves different user roles including administrators, doctors, and patients.
 
+![2025-05-25 23_54_45-Settings](https://github.com/user-attachments/assets/24e74cf5-81d4-47c0-b023-eee3dec68806)
+
 ## Features
 - Multi-user role support (Admin, Doctor, Patient)
 - Two-factor authentication (2FA)
